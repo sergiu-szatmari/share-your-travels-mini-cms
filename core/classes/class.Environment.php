@@ -1,6 +1,6 @@
 <?php
 
-defined('_HELIX_VALID_ACCESS') or die('Invalid access');
+defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
 
 class Environment
 {
@@ -11,7 +11,14 @@ class Environment
             case Constants::_ENV_LOCALHOST:
             case Constants::_ENV_DEPLOY:
 
-                $file   = fopen( Constants::_ENV_PREFIX . $envType, 'r' );
+                $filename = Constants::_ENV_PREFIX . $envType;
+
+                if ( !is_file($filename) )
+                {
+                    throw new Exception('Environment file not found.');
+                }
+
+                $file   = fopen( $filename, 'r' );
                 $env    = [];
 
                 while ( ($line = fgets($file)) !== false )
