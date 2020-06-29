@@ -28,6 +28,7 @@ class ClassLoader
         'Security',
         'Database',
         'Dispatcher',
+        'AdminDispatcher',
     ];
 
     private static $pages = [
@@ -38,6 +39,8 @@ class ClassLoader
         'Home',
         'About',
         'Blog',
+
+        'Login',
     ];
 
     private static function loadUtils(): void

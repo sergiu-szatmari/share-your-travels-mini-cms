@@ -56,7 +56,7 @@ abstract class aPage implements iPage
                 ?>
                     <nav>
                         <div class="nav-logo">
-                            <h4>MiniCms PHP</h4>
+                            <h4>Mini Cms PHP</h4>
                         </div>
 
                         <ul class="nav-links">

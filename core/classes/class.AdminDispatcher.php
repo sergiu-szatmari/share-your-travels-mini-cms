@@ -2,7 +2,7 @@
 
 defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
 
-class Dispatcher extends aDispatcher
+class AdminDispatcher extends aDispatcher
 {
     public static function get(): void
     {
@@ -10,10 +10,10 @@ class Dispatcher extends aDispatcher
 
         if ( !$action )
         {
-            Home::render();
+            Login::render();
         }
 
-        if ( !Security::isActionAllowed($action, __FUNCTION__) )
+        if ( !Security::isActionAllowed($action, __FUNCTION__, $isAdmin = true) )
         {
             BadRequest400::render([
                 'message' => "Action '{$action}' is not allowed"
@@ -41,7 +41,7 @@ class Dispatcher extends aDispatcher
             Home::render();
         }
 
-        if ( !Security::isActionAllowed($action, __FUNCTION__) )
+        if ( !Security::isActionAllowed($action, __FUNCTION__, $isAdmin = true) )
         {
             BadRequest400::render([
                 'message' => "Action '{$action}' is not allowed"

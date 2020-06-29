@@ -8,8 +8,6 @@ abstract class aDispatcher
 
     abstract static function post(): void;
 
-    abstract static function defaultRequestHandler(): void;
-
     public static function listen(): void
     {
         // TODO: Security
@@ -41,5 +39,12 @@ abstract class aDispatcher
     public static function blog(): void
     {
         Blog::render();
+    }
+
+    public static function defaultRequestHandler(): void
+    {
+        BadRequest400::render([
+            'message' => "Method '{$_SERVER['REQUEST_METHOD']}' is not allowed"
+        ]);
     }
 }

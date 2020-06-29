@@ -38,4 +38,8 @@ class Constants
 
     // Component names
     public const _COMPONENT_NAVBAR      = 'Navbar';
+
+    // Options
+    public const _OPT_TABLE             = 'table';
+    public const _OPT_ORDER_BY          = 'orderBy';
 }
