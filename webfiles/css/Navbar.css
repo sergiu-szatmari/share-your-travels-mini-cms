@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*min-height: 8vh;*/
+    height: 8vh;
+    background: #5d4954;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.nav-logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-link-active {
+    color: rgb(174, 169, 142) !important;
+}
+
+.nav-burger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*@media screen and (max-width: 1024px) {*/
+
+/*    .nav-links {*/
+/*        display: flex;*/
+/*        justify-content: space-around;*/
+/*        width: 40%;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-burger {
+        display: block;
+        position: fixed;
+        right: 15vw;
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.nav-burger-toggled .nav-burger-line-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-burger-toggled .nav-burger-line-2 {
+    opacity: 0;
+}
+
+.nav-burger-toggled .nav-burger-line-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

@@ -1,5 +1,6 @@
 .idea/*
-
 env/*
 !env/.env-sample
 !env/.htaccess
+CHANGELOG.md
+scripts/*

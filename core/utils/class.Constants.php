@@ -6,13 +6,17 @@ class Constants
 {
     // Dirs
     public const _DIR_CORE              = _DIR_PROJECT_ROOT . 'core/';
-    public const _DIR_WEBFILES          = _DIR_PROJECT_ROOT . 'webfiles/';
     public const _DIR_ENV               = _DIR_PROJECT_ROOT . 'env/';
 
     public const _DIR_INTERFACES        = self::_DIR_CORE . 'interface/';
     public const _DIR_MODELS            = self::_DIR_CORE . 'model/';
     public const _DIR_CLASSES           = self::_DIR_CORE . 'classes/';
     public const _DIR_PAGES             = self::_DIR_CORE . 'pages/';
+
+    // Resources dirs
+    public const _DIR_WEBFILES          = 'webfiles/';
+    public const _DIR_CSS               = self::_DIR_WEBFILES . 'css/';
+    public const _DIR_JS                = self::_DIR_WEBFILES . 'js/';
 
     // Prefixes
     public const _ENV_PREFIX            = self::_DIR_ENV . ".env-";
@@ -29,4 +33,9 @@ class Constants
 
     // Extensions
     public const _PHP_EXT               = '.php';
+    public const _CSS_EXT               = '.css';
+    public const _JS_EXT                = '.js';
+
+    // Component names
+    public const _COMPONENT_NAVBAR      = 'Navbar';
 }

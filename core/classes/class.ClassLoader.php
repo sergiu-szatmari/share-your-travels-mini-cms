@@ -16,6 +16,7 @@ class ClassLoader
     private static $abstractClasses = [
         'aModel',
         'aDispatcher',
+        'aPage',
     ];
 
     private static $models = [

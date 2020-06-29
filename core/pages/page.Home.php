@@ -2,15 +2,21 @@
 
 defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
 
-class Home implements iPage
+class Home extends aPage
 {
     public static function render( $context = [] ): void
     {
-        ?>
-        <a href="about">About</a>
-        <a href="blog">Blog</a>
-        <?php
-        die( 'Home works' );
+        self::clear();
+        self::headers();
+        self::css( __CLASS__ );
+
+        self::component(
+            Constants::_COMPONENT_NAVBAR,
+            [ 'currentPage' => __CLASS__ ]
+        );
+
+        self::js( __CLASS__ );
+        die;
     }
 
 }
