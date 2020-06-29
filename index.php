@@ -15,6 +15,11 @@ try
 
     ClassLoader::load();
 
+    if ( !Cookie::exists( Constants::_COOKIE_LANG ) )
+    {
+        Cookie::set( Constants::_COOKIE_LANG, 'ro' );
+    }
+
     Dispatcher::listen();
 }
 catch (Exception $ex)

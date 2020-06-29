@@ -47,9 +47,9 @@ abstract class aPage implements iPage
 
                 $mapping = [
                     // Url  => Nav link name
-                    'home'  => 'Home',
-                    'about' => 'About',
-                    'blog'  => 'Blog',
+                    'home'  => 'nav-link-home',
+                    'about' => 'nav-link-about',
+                    'blog'  => 'nav-link-blog',
                 ];
 
                 self::css( Constants::_COMPONENT_NAVBAR );
@@ -63,7 +63,7 @@ abstract class aPage implements iPage
                             <?php foreach ( $mapping as $url => $navLinkName ): ?>
                                 <li>
                                     <a href="<?= $url; ?>">
-                                        <?= $navLinkName ?>
+                                        <?= Language::get( $navLinkName, Cookie::get( Constants::_COOKIE_LANG ) ) ?>
                                     </a>
                                 </li>
                             <?php endforeach; ?>

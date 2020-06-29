@@ -29,6 +29,8 @@ class ClassLoader
         'Database',
         'Dispatcher',
         'AdminDispatcher',
+        'Language',
+        'Cookie',
     ];
 
     private static $pages = [

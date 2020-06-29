@@ -17,6 +17,7 @@ class Constants
     public const _DIR_WEBFILES          = 'webfiles/';
     public const _DIR_CSS               = self::_DIR_WEBFILES . 'css/';
     public const _DIR_JS                = self::_DIR_WEBFILES . 'js/';
+    public const _DIR_LANG              = self::_DIR_WEBFILES . 'lang/';
 
     // Prefixes
     public const _ENV_PREFIX            = self::_DIR_ENV . ".env-";
@@ -35,6 +36,7 @@ class Constants
     public const _PHP_EXT               = '.php';
     public const _CSS_EXT               = '.css';
     public const _JS_EXT                = '.js';
+    public const _JSON_EXT              = '.json';
 
     // Component names
     public const _COMPONENT_NAVBAR      = 'Navbar';
@@ -42,4 +44,8 @@ class Constants
     // Options
     public const _OPT_TABLE             = 'table';
     public const _OPT_ORDER_BY          = 'orderBy';
+
+    // Cookies
+    public const _COOKIE_LANG           = 'cookielang';
+    public const _COOKIE_ADMIN          = 'minicmsphpadmin';
 }
