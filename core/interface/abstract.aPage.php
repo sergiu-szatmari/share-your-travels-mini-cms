@@ -45,13 +45,6 @@ abstract class aPage implements iPage
         {
             case Constants::_COMPONENT_NAVBAR:
 
-                $mapping = [
-                    // Url  => Nav link name
-                    'home'  => 'nav-link-home',
-                    'about' => 'nav-link-about',
-                    'blog'  => 'nav-link-blog',
-                ];
-
                 self::css( Constants::_COMPONENT_NAVBAR );
                 ?>
                     <nav>
@@ -60,13 +53,31 @@ abstract class aPage implements iPage
                         </div>
 
                         <ul class="nav-links">
-                            <?php foreach ( $mapping as $url => $navLinkName ): ?>
-                                <li>
-                                    <a href="<?= $url; ?>">
-                                        <?= Language::get( $navLinkName, Cookie::get( Constants::_COOKIE_LANG ) ) ?>
+                            <li>
+                                <a href="home">
+                                    <?= Language::get( 'nav-link-home', Cookie::get( Constants::_COOKIE_LANG ) ) ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about">
+                                    <?= Language::get( 'nav-link-about', Cookie::get( Constants::_COOKIE_LANG ) ) ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog">
+                                    <?= Language::get( 'nav-link-blog', Cookie::get( Constants::_COOKIE_LANG ) ) ?>
+                                </a>
+                            </li>
+                            <li>
+                                <div style="right: 20px;">
+                                    <a href="to-en">
+                                        <span class="flag flag-england"></span>
                                     </a>
-                                </li>
-                            <?php endforeach; ?>
+                                    <a href="to-ro">
+                                        <span class="flag flag-ro"></span>
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
 
                         <div class="nav-burger">

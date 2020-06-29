@@ -129,3 +129,19 @@ nav {
 .nav-burger-toggled .nav-burger-line-3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.flag {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 11px;
+    background: url('https://flag-sprites.com/img/flags.png') no-repeat
+}
+
+.flag.flag-england {
+    background-position: -192px -33px
+}
+
+.flag.flag-ro {
+    background-position: -64px -121px
+}

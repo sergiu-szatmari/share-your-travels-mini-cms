@@ -59,4 +59,16 @@ class Dispatcher extends aDispatcher
             ]);
         }
     }
+
+    public static function changeLang2En()
+    {
+        Cookie::set( Constants::_COOKIE_LANG, 'en' );
+        header('Location: home');
+    }
+
+    public static function changeLang2Ro()
+    {
+        Cookie::set( Constants::_COOKIE_LANG, 'ro' );
+        header('Location: home');
+    }
 }

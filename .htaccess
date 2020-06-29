@@ -3,6 +3,8 @@ RewriteEngine On
 RewriteRule ^home index.php
 RewriteRule ^about index.php?action=about
 RewriteRule ^blog index.php?action=blog
+RewriteRule ^to-en index.php?action=changeLang2En
+RewriteRule ^to-ro index.php?action=changeLang2Ro
 
 Options -Indexes
 

@@ -9,7 +9,9 @@ class Security
             'home',
             'about',
             'blog',
-            'join'
+            'join',
+            'changeLang2Ro',
+            'changeLang2En',
         ],
         'post' => [
 
