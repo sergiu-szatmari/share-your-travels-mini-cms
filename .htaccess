@@ -1,9 +1,6 @@
 RewriteEngine On
 
 RewriteRule ^home index.php
-RewriteRule ^about index.php?action=about
-RewriteRule ^blog index.php?action=blog
-RewriteRule ^join index.php?action=join
 RewriteRule ^submit$ index.php?action=submitted
 RewriteRule ^posts/([a-zA-Z0-9\-]*)$ index.php?action=seeBlogPost&seoName=$1
 
