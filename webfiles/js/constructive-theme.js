@@ -2,8 +2,7 @@ const renderPage = true;
 
 let currentPageID = "#tm-section-1";
 
-// TODO: Make dynamic length
-let questions = Array.from(Array(formQuestionsCount).fill(false));
+let questions = Array.from(Array(5).fill(false));
 
 // Setup Carousel
 function setupCarousel() {

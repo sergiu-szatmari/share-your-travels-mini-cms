@@ -346,7 +346,7 @@ class HomePage extends aPage
 
                                             <div class="row justify-content-between">
                                                 <button style="font-size: 2vh;" type="button" class="btn form-btn col-5 col-md-4 col-sm-12 justify-content-evenly" onclick="cancelAddReview();">
-                                                    <?= Language::get( 'js-subscribe-btn-cancel' ); ?>
+                                                    <?= Language::get( 'js-remove-post-btn-cancel' ); ?>
                                                 </button>
 
                                                 <button style="font-size: 2vh; color: lightgreen; border-color: lightgreen;" type="button" class="btn form-btn col-5 col-md-4 col-sm-12 justify-content-evenly" onclick="submitReview();">
