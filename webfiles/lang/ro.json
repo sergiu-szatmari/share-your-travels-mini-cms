@@ -1,5 +1,139 @@
 {
+  "app-name": "Share your travels",
   "nav-link-home": "Acasă",
   "nav-link-about": "Despre",
-  "nav-link-blog": "Blog"
+  "nav-link-blog": "Blog",
+  "nav-link-contact": "Împărtăşeşte <br>călătoria ta",
+  "nav-link-goto-admin": "Spre admin",
+
+  "powered-by": "Creat de <a id='powered-by' href='https://github.com/sergiu-szatmari'>sergiu-szatmari</a><br>Temă extinsă din <a id='powered-by' href='https://www.free-css.com/free-css-templates/page255/constructive'>Constructive 2012</a>",
+
+  "home-whoami": "Despre mine",
+
+  "about-aboutme": "Despre mine",
+  "about-1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid fuga, fugit iste, natus, necessitatibus officia pariatur quod repudiandae similique tempora tempore unde voluptate. Accusamus aliquid autem blanditiis dolorem ex illo impedit iste maxime mollitia perferendis, rem tempore temporibus? Explicabo facere ipsam nisi quam! Corporis dolor doloremque eius, eligendi illum inventore iusto nihil numquam, praesentium quae quia repudiandae sequi voluptatibus? A aliquid, consectetur dolore doloremque dolorum excepturi facilis impedit ipsum iste minima mollitia, nemo quaerat qui ratione sit sunt voluptate? A accusantium aliquam amet aperiam architecto deleniti doloribus eaque, eos error esse est eveniet exercitationem illo illum itaque, libero maiores minus molestiae optio perspiciatis repellendus repudiandae saepe voluptas? Atque consequatur, cumque dolor ducimus eligendi rem repudiandae similique tempore. Ad, similique, tenetur?",
+  "about-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa explicabo illo libero vero! Aliquid animi at autem beatae debitis ducimus, eius facilis incidunt ipsam magni maxime minima molestias necessitatibus, numquam omnis perferendis perspiciatis provident, quasi rem repellat repellendus reprehenderit tempora tempore totam vel veniam veritatis! Ad adipisci amet architecto consectetur cupiditate debitis distinctio dolore ea esse et exercitationem explicabo harum, illum magni minima nam necessitatibus nemo, nihil obcaecati perferendis qui quia quis quisquam rem reprehenderit rerum similique temporibus ullam unde voluptatibus. Dolorum, eaque exercitationem hic in labore nobis non odit tenetur! Adipisci, aliquid aspernatur debitis dolores excepturi facere hic illo illum labore nemo, placeat quam repellat ullam ut velit vitae voluptatem! Architecto dolore inventore maxime minus quos sapiente veniam.",
+  "about-3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus fuga fugit labore nobis praesentium quod reiciendis repudiandae sunt voluptate! A accusantium aperiam atque, blanditiis dolorum est fugit harum, itaque laboriosam laudantium minus nisi nulla optio pariatur reiciendis rem repudiandae sequi similique suscipit tempore. Accusamus, aut, consectetur consequuntur cum doloremque earum eveniet illo illum laborum molestias optio perspiciatis quasi reiciendis repellat sapiente similique vel veniam vero voluptate voluptatum. Adipisci alias aut blanditiis cum delectus, maxime molestiae pariatur sed? Ad adipisci alias asperiores atque blanditiis commodi delectus, distinctio doloremque eaque eligendi eos et eum fugit hic incidunt itaque libero maiores minima modi odio officiis optio pariatur qui similique, sunt suscipit, voluptatum. Cupiditate iusto quis vitae voluptate! Aspernatur deserunt expedita hic nesciunt.",
+  "about-4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda aut culpa cumque dicta dignissimos dolorem eos est expedita laboriosam libero maiores minus neque nobis non perferendis perspiciatis quibusdam ratione saepe sequi velit veniam, voluptatibus. Aliquid eos est harum, hic inventore libero magni maxime omnis praesentium repellat unde velit voluptatum. Accusantium cum dolore facere inventore, neque odit quia reiciendis sed soluta vero. Ad alias aliquam amet consequatur cupiditate doloribus earum, enim est fugiat hic incidunt itaque modi, mollitia nostrum omnis, perferendis ratione sit? Aliquam deserunt est exercitationem labore odit, officia omnis porro similique voluptas? Animi aspernatur blanditiis, consequuntur cumque debitis delectus dolore ducimus et eum eveniet excepturi inventore magni necessitatibus nobis omnis quis repellat reprehenderit rerum similique velit voluptates voluptatum.",
+  "about-5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A id mollitia officia officiis suscipit tempora voluptate! Alias aliquid culpa, illum inventore ipsa molestias praesentium sapiente. Cum eveniet exercitationem facere fugiat ipsum nihil, nisi provident sapiente totam voluptatibus! Alias autem commodi consectetur corporis cumque debitis, dicta dolorum error eveniet ex expedita facere fugiat in itaque, iure maiores minus neque officia perferendis perspiciatis placeat possimus quas quasi quibusdam recusandae sint soluta suscipit tenetur ullam velit! Esse itaque magni recusandae reprehenderit. A aut debitis dolorum eius eos, fuga fugiat harum iusto laborum libero magni maiores necessitatibus odit quo sed suscipit tenetur velit! Accusamus accusantium adipisci asperiores blanditiis culpa fugiat illo inventore, ipsum iusto laborum nulla provident quas quia quod quos reiciendis ut voluptatibus?",
+  "about-6": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda cumque eum facilis harum omnis rem repellat sapiente sunt temporibus. Alias architecto atque beatae corporis dolore esse, est ex excepturi expedita facilis hic inventore odio repellendus, tempore veniam vitae, voluptatem! Accusamus adipisci aperiam assumenda, autem consectetur consequuntur corporis culpa cumque doloremque eaque ex excepturi illo ipsa molestias natus nobis numquam optio perferendis perspiciatis quaerat quidem quis repudiandae sint soluta totam vel voluptatem voluptatum! Adipisci aliquid amet autem corporis dicta eius harum iste natus necessitatibus nostrum, quis sed! Accusantium adipisci at consequuntur cum cumque debitis distinctio dolores eligendi esse fugiat illum inventore iure labore laboriosam magnam maxime modi molestiae nostrum porro, quaerat quas similique soluta tempore unde, veniam. Aperiam doloremque, sunt.",
+
+  "blog-no-posts": "Deocamdată nu sunt postări pe blog . . .",
+  "blog-blogposts": "Postări în blog",
+  "blog-readmore": "citeşte mai mult",
+
+  "forms-no-forms": "Deocamdată nu sunt cereri de contact . . .",
+
+  "reviews": "Recenzii",
+  "add-review": "Adaugă o recenzie",
+  "no-reviews": "Nu există recenzii deocamdată . . .",
+  "add-review-name": "Numele tău",
+  "add-review-email": "Adresa de email (nu va fi vizibilă în cadrul recenziilor)",
+  "add-review-message": "Mesajul recenziei",
+  "add-review-rating": "Scorul de evaluare",
+  "name": "Nume",
+  "message": "Mesaj",
+  "submit-review": "Trimite",
+
+  "contact-title": "Spune-ţi povestea",
+  "contact-text1": "Ei bine, bănuiesc că deja ai aflat câte ceva <a href='#about'>despre</a> mine şi <a href='#blog'>călătoriile</a> mele. Dacă vrei să vorbim şi să împărtăşim opinii şi experienţe de călătorie, aş dori să te rog să completezi următorul formular.",
+  "contact-text2": "În formular, va fi nevoie să treci datele de contact, împreună cu povestea ta grozavă!",
+  "contact-text3": "Aştept mesajul tău :)",
+
+  "contact-questions": {
+    "contact-question-1": {
+      "question": "Cum te numești ?",
+      "questionID": "1",
+      "name": "name",
+      "type": "input"
+    },
+    "contact-question-2": {
+      "question": "Adresa ta de email ?",
+      "questionID": "2",
+      "name": "email",
+      "type": "input"
+    },
+    "contact-question-3": {
+      "question": "De unde esti ?",
+      "questionID": "3",
+      "name": "live",
+      "type": "input"
+    },
+    "contact-question-4": {
+      "question": "ID-ul de skype ?",
+      "questionID": "4",
+      "name": "skype",
+      "type": "input"
+    },
+    "contact-question-5": {
+      "question": "Care este povestea ta grozavă dintr-o călătorie ?",
+      "questionID": "5",
+      "name": "travelStory",
+      "type": "textarea"
+    }
+  },
+
+  "contact-next": "Următoarea",
+  "contact-prev": "Precedenta",
+
+  "contact-invalid-form": "Formular invalid",
+
+  "error": "Eroare",
+  "error-page-err-msg": "A apărut o eroare neaşteptată",
+  "back-to-site-btn": "Înapoi la site",
+  "error-msg-technical-problems": "Probleme tehnice",
+  "error-invalid-url": "Resursa solicitată nu există",
+  "submitted-text": "Formularul s-a trimis cu succes",
+  "success": "Succes",
+
+  "admin-menu-blog-posts": "Postări",
+  "admin-menu-forms": "Formulare",
+  "admin-menu-go-to-site": "Spre site",
+  "admin-menu-log-out": "Log out",
+  "admin-welcome": "Bun venit",
+
+  "new-post": "Postare nouă",
+  "admin-blog-post-update": "Actualizare",
+  "admin-blog-post-remove": "Ştergere",
+  "admin-blog-post-see-post": "Spre postare",
+
+  "admin-forms-requests": "Formulare & cereri de contact",
+  "form-date": "Data formularului",
+  "created-at": "Creat la",
+  "blog-post-title": "Titlul postării",
+  "blog-post-content": "Conţinutul postării",
+
+  "js-update-blog-post-no": "Actualizează postarea #",
+  "js-update-blog-post": "Actualizează postarea",
+  "js-add-blog-post": "Adaugă postare",
+  "js-add-new-blog-post": "Adaugă postare nouă",
+
+  "js-remove-post-question": "Eşti sigur că vrei să elimini postarea #",
+  "js-remove-post-title": "Elimini postarea ?",
+  "js-remove-post-btn-cancel": "Anulare",
+  "js-remove-post-btn-confirm": "Ştergere",
+
+  "js-on-remove-post-success-title": "Succes",
+  "js-on-remove-post-success": "Postarea #${{postID}} a fost eliminată cu success",
+  "js-on-remove-error-title": "Eroare",
+  "js-on-remove-error": "A apărut o eroare în timpul ştergerii postării #${{postID}}",
+
+  "js-form-no": "Formularul #",
+
+  "js-form-incomplete-title": "Răspunsuri necompletate",
+  "js-form-incomplete": "Trebuie să răspunzi la toate întrebările obligatorii",
+
+  "js-review-incomplete-title": "Câmpuri necompletate",
+  "js-review-incomplete": "Toate câmpurile trebuie completate pentru a putea trimite recenzia",
+
+  "js-new-review-success-message": "Recenzia a fost trimisă cu succes",
+
+  "js-on-remove-review-success": "Recenzia #{{reviewID}} s-a şters cu succes",
+  "js-on-remove-review-success-title": "Succes",
+  "js-on-remove-review-error":  "Eroare la ştergerea recenziei #{{reviewID}}",
+
+  "js-remove-review-question": "Eşti sigur de eliminarea recenziei #",
+  "js-remove-review-title": "Eliminarea recenziei",
+  "js-remove-review-btn-cancel":  "Anulare",
+  "js-remove-review-btn-confirm": "Ştergere"
 }

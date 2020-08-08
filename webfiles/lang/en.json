@@ -1,5 +1,139 @@
 {
+  "app-name": "Share your travels",
   "nav-link-home": "Home",
   "nav-link-about": "About",
-  "nav-link-blog": "Blog"
+  "nav-link-blog": "Blog",
+  "nav-link-contact": "Share your <br>travel experience",
+  "nav-link-goto-admin": "Go to admin",
+
+  "powered-by": "Created by <a id='powered-by' href='https://github.com/sergiu-szatmari'>sergiu-szatmari</a><br>The theme was extended from <a id='powered-by' href='https://www.free-css.com/free-css-templates/page255/constructive'>Constructive 2012</a>",
+
+  "home-whoami": "About me",
+
+  "about-aboutme": "About me",
+  "about-1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid fuga, fugit iste, natus, necessitatibus officia pariatur quod repudiandae similique tempora tempore unde voluptate. Accusamus aliquid autem blanditiis dolorem ex illo impedit iste maxime mollitia perferendis, rem tempore temporibus? Explicabo facere ipsam nisi quam! Corporis dolor doloremque eius, eligendi illum inventore iusto nihil numquam, praesentium quae quia repudiandae sequi voluptatibus? A aliquid, consectetur dolore doloremque dolorum excepturi facilis impedit ipsum iste minima mollitia, nemo quaerat qui ratione sit sunt voluptate? A accusantium aliquam amet aperiam architecto deleniti doloribus eaque, eos error esse est eveniet exercitationem illo illum itaque, libero maiores minus molestiae optio perspiciatis repellendus repudiandae saepe voluptas? Atque consequatur, cumque dolor ducimus eligendi rem repudiandae similique tempore. Ad, similique, tenetur?",
+  "about-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa explicabo illo libero vero! Aliquid animi at autem beatae debitis ducimus, eius facilis incidunt ipsam magni maxime minima molestias necessitatibus, numquam omnis perferendis perspiciatis provident, quasi rem repellat repellendus reprehenderit tempora tempore totam vel veniam veritatis! Ad adipisci amet architecto consectetur cupiditate debitis distinctio dolore ea esse et exercitationem explicabo harum, illum magni minima nam necessitatibus nemo, nihil obcaecati perferendis qui quia quis quisquam rem reprehenderit rerum similique temporibus ullam unde voluptatibus. Dolorum, eaque exercitationem hic in labore nobis non odit tenetur! Adipisci, aliquid aspernatur debitis dolores excepturi facere hic illo illum labore nemo, placeat quam repellat ullam ut velit vitae voluptatem! Architecto dolore inventore maxime minus quos sapiente veniam.",
+  "about-3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus fuga fugit labore nobis praesentium quod reiciendis repudiandae sunt voluptate! A accusantium aperiam atque, blanditiis dolorum est fugit harum, itaque laboriosam laudantium minus nisi nulla optio pariatur reiciendis rem repudiandae sequi similique suscipit tempore. Accusamus, aut, consectetur consequuntur cum doloremque earum eveniet illo illum laborum molestias optio perspiciatis quasi reiciendis repellat sapiente similique vel veniam vero voluptate voluptatum. Adipisci alias aut blanditiis cum delectus, maxime molestiae pariatur sed? Ad adipisci alias asperiores atque blanditiis commodi delectus, distinctio doloremque eaque eligendi eos et eum fugit hic incidunt itaque libero maiores minima modi odio officiis optio pariatur qui similique, sunt suscipit, voluptatum. Cupiditate iusto quis vitae voluptate! Aspernatur deserunt expedita hic nesciunt.",
+  "about-4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda aut culpa cumque dicta dignissimos dolorem eos est expedita laboriosam libero maiores minus neque nobis non perferendis perspiciatis quibusdam ratione saepe sequi velit veniam, voluptatibus. Aliquid eos est harum, hic inventore libero magni maxime omnis praesentium repellat unde velit voluptatum. Accusantium cum dolore facere inventore, neque odit quia reiciendis sed soluta vero. Ad alias aliquam amet consequatur cupiditate doloribus earum, enim est fugiat hic incidunt itaque modi, mollitia nostrum omnis, perferendis ratione sit? Aliquam deserunt est exercitationem labore odit, officia omnis porro similique voluptas? Animi aspernatur blanditiis, consequuntur cumque debitis delectus dolore ducimus et eum eveniet excepturi inventore magni necessitatibus nobis omnis quis repellat reprehenderit rerum similique velit voluptates voluptatum.",
+  "about-5": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A id mollitia officia officiis suscipit tempora voluptate! Alias aliquid culpa, illum inventore ipsa molestias praesentium sapiente. Cum eveniet exercitationem facere fugiat ipsum nihil, nisi provident sapiente totam voluptatibus! Alias autem commodi consectetur corporis cumque debitis, dicta dolorum error eveniet ex expedita facere fugiat in itaque, iure maiores minus neque officia perferendis perspiciatis placeat possimus quas quasi quibusdam recusandae sint soluta suscipit tenetur ullam velit! Esse itaque magni recusandae reprehenderit. A aut debitis dolorum eius eos, fuga fugiat harum iusto laborum libero magni maiores necessitatibus odit quo sed suscipit tenetur velit! Accusamus accusantium adipisci asperiores blanditiis culpa fugiat illo inventore, ipsum iusto laborum nulla provident quas quia quod quos reiciendis ut voluptatibus?",
+  "about-6": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda cumque eum facilis harum omnis rem repellat sapiente sunt temporibus. Alias architecto atque beatae corporis dolore esse, est ex excepturi expedita facilis hic inventore odio repellendus, tempore veniam vitae, voluptatem! Accusamus adipisci aperiam assumenda, autem consectetur consequuntur corporis culpa cumque doloremque eaque ex excepturi illo ipsa molestias natus nobis numquam optio perferendis perspiciatis quaerat quidem quis repudiandae sint soluta totam vel voluptatem voluptatum! Adipisci aliquid amet autem corporis dicta eius harum iste natus necessitatibus nostrum, quis sed! Accusantium adipisci at consequuntur cum cumque debitis distinctio dolores eligendi esse fugiat illum inventore iure labore laboriosam magnam maxime modi molestiae nostrum porro, quaerat quas similique soluta tempore unde, veniam. Aperiam doloremque, sunt.",
+
+  "blog-no-posts": "There are no blog posts yet . . .",
+  "blog-blogposts": "Blog posts",
+  "blog-readmore": "read more",
+
+  "forms-no-forms": "There are no contact forms yet . . .",
+
+  "reviews": "Reviews",
+  "add-review": "Add review",
+  "no-reviews": "There are no reviews yet . . .",
+  "add-review-name": "Your name",
+  "add-review-email": "Your email address (won't appear in the reviews section)",
+  "add-review-message": "The review message",
+  "add-review-rating": "Your rating",
+  "name": "Name",
+  "message": "Message",
+  "submit-review": "Submit",
+
+  "contact-title": "Share your story",
+  "contact-text1": "Well, I guess you have already found out some things <a href='#about'>about</a> me and my <a href='#blog'>travels</a>. If you want us to have a chat and share travel stories, I would kindly ask you to fill the following form. ",
+  "contact-text2": "You will have to fill out some contact information, and also, your awesome story!",
+  "contact-text3": "I am looking forward to hear from you :)",
+
+  "contact-questions": {
+    "contact-question-1": {
+      "question": "What is your name ?",
+      "questionID": "1",
+      "name": "name",
+      "type": "input"
+    },
+    "contact-question-2": {
+      "question": "Your email address ?",
+      "questionID": "2",
+      "name": "email",
+      "type": "input"
+    },
+    "contact-question-3": {
+      "question":"Where are you from ?",
+      "questionID": "3",
+      "name": "live",
+      "type":"input"
+    },
+    "contact-question-4": {
+      "question": "Your Skype ID ?",
+      "questionID": "4",
+      "name": "skype",
+      "type": "input"
+    },
+    "contact-question-5": {
+      "question": "What is your amazing travel story ?",
+      "questionID": "5",
+      "name": "travelStory",
+      "type": "textarea"
+    }
+  },
+
+  "contact-next": "Next",
+  "contact-prev": "Prev",
+
+  "contact-invalid-form": "Invalid form",
+
+  "error": "Error",
+  "error-page-err-msg": "An unexpected error has occured",
+  "back-to-site-btn": "Back to site",
+  "error-msg-technical-problems": "Technical problems",
+  "error-invalid-url": "The specified resource does not exist",
+  "submitted-text": "The form has been submitted successfully",
+  "success": "Success",
+
+  "admin-menu-blog-posts": "Blog posts",
+  "admin-menu-forms": "Contact forms",
+  "admin-menu-go-to-site": "Go to site",
+  "admin-menu-log-out": "Log out",
+  "admin-welcome": "Welcome",
+
+  "new-post": "New post",
+  "admin-blog-post-update": "Update",
+  "admin-blog-post-remove": "Remove",
+  "admin-blog-post-see-post": "See post",
+
+  "admin-forms-requests": "Forms & contact requests",
+  "form-date": "Form date",
+  "created-at": "Created at",
+  "blog-post-title": "Blog post title",
+  "blog-post-content": "Blog post content",
+
+  "js-update-blog-post-no": "Update blog post #",
+  "js-update-blog-post": "Update blog post",
+  "js-add-blog-post": "Add blog post",
+  "js-add-new-blog-post": "Add new blog post",
+
+  "js-remove-post-question": "Are you sure you want to remove post #",
+  "js-remove-post-title": "Remove post ?",
+  "js-remove-post-btn-cancel": "Cancel",
+  "js-remove-post-btn-confirm": "Delete",
+
+  "js-on-remove-post-success-title": "Success",
+  "js-on-remove-post-success": "Post #{{postID}} was removed successfully",
+  "js-on-remove-error-title": "Error",
+  "js-on-remove-error": "Error on removing post #${{postID}}",
+
+  "js-form-no": "Form #",
+
+  "js-form-incomplete-title": "Unanswered questions",
+  "js-form-incomplete": "You must answer all of the required questions",
+
+  "js-review-incomplete-title": "Empty fields",
+  "js-review-incomplete": "Please complete all the fields in the review",
+
+  "js-new-review-success-message": "The review was successfully sent",
+
+  "js-on-remove-review-success": "Review #{{reviewID}} was deleted successfully",
+  "js-on-remove-review-success-title": "Success",
+  "js-on-remove-review-error":  "Error on removing review #{{reviewID}}",
+
+  "js-remove-review-question": "Are you sure about removing review #",
+  "js-remove-review-title": "Remove review ?",
+  "js-remove-review-btn-cancel":  "Cancel",
+  "js-remove-review-btn-confirm": "Delete"
 }

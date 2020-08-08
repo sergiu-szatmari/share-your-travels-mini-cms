@@ -1,0 +1,54 @@
+#welcome-admin {
+    pointer-events: none;
+    user-select: none;
+}
+
+#welcome-admin-special {
+    color: #359abd !important;
+    transition: 0.4s;
+}
+
+#welcome-admin-special:hover {
+    color: #47c2ed !important;
+    transition: 0.4s;
+}
+
+#logout-nav {
+    transform: rotate(180deg) !important;
+}
+
+h1 {
+    user-select: none;
+}
+
+input.disabled {
+    pointer-events: none;
+    margin-bottom: 20px;
+}
+
+textarea.disabled {
+    pointer-events: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.action-button {
+    border: 0 !important;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.removed {
+    -webkit-animation: fadeOut 500ms;
+    -moz-animation: fadeOut 500ms;
+    animation: fadeOut 500ms;
+}
+
+#welcome-admin-text {
+    font-size: 2.5em
+}

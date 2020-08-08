@@ -1,30 +1,34 @@
 <?php
 
-// TODO: set_error_handler(...)
-// TODO: set_exception_handler(...)
-// TODO: error_reporting(...)
+//error_reporting(E_ALL);
+error_reporting(E_ERROR);
 
-define( '_HELIX_VALID_ACCESS', true );
-define( '_DIR_PROJECT_ROOT', dirname( __FILE__ ) . '/' );
+define( '_HELIX_VALID_ACCESS',  1 );
+define( '_DIR_PROJECT_ROOT',    dirname( __FILE__ ) . '/' );
 
 try
 {
-    require_once _DIR_PROJECT_ROOT . '/core/classes/class.ClassLoader.php';
-    require_once _DIR_PROJECT_ROOT . '/core/interface/interface.iPage.php';
-    require_once _DIR_PROJECT_ROOT . '/core/pages/page.InternalServerError500.php';
+    require_once( _DIR_PROJECT_ROOT . '/core/interface/interface.iPage.php');
+    require_once( _DIR_PROJECT_ROOT . '/core/interface/abstract.aPage.php');
+    require_once( _DIR_PROJECT_ROOT . '/core/classes/class.ClassLoader.php');
 
     ClassLoader::load();
 
-    if ( !Cookie::exists( Constants::_COOKIE_LANG ) )
+    date_default_timezone_set( Environment::getTimezone() );
+
+    Logger::mark();
+
+    if ( !Cookie::exists(Constants::_COOKIE_LANG) )
     {
-        Cookie::set( Constants::_COOKIE_LANG, 'ro' );
+        Cookie::set( Constants::_COOKIE_LANG, Language::getDefaultLangCode() );
     }
 
     Dispatcher::listen();
-}
-catch (Exception $ex)
-{
-    InternalServerError500::render([
+
+} catch (Exception $ex) {
+
+    ErrorPage::render([
+        'httpCode' => 500,
         'errorMsg' => $ex->getMessage()
     ]);
 }

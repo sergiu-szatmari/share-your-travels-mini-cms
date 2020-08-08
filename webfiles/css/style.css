@@ -1,0 +1,73 @@
+#powered-by:hover {
+    color: #359abd !important;
+}
+
+textarea {
+    resize: none;
+}
+
+#language-switch-li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#language-switch-li button {
+    color: white;
+}
+
+#language-switch-li button:hover {
+    color: #359abd;
+}
+
+#contact-form-next, #contact-form-prev {
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    iframe {
+        width: 50vw !important;
+        max-width: 50vw !important;
+    }
+}
+
+iframe {
+    width: inherit !important;
+    height: inherit !important;
+    max-width: inherit !important;
+    max-height: inherit !important;
+    overflow: hidden;
+}
+
+#blog-post-title-nav-link {
+    max-width: fit-content !important;
+    padding: 0 !important;
+}
+
+@keyframes globe-rotate {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(360deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.modal div div {
+    background: rgba(0, 0, 0, 0.5) !important;
+    text-decoration-color: black !important;
+}
+
+#modal-close-btn {
+    color: white;
+}
+
+.checked {
+    color: orange;
+}
+
+#add-review-name:not(:focus),
+#add-review-email:not(:focus),
+#add-review-message:not(:focus) {
+    font-style:italic;
+}

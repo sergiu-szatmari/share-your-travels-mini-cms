@@ -1,142 +1,87 @@
 <?php
 
-defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
+defined('_HELIX_VALID_ACCESS') or die('Invalid access');
 
 class ClassLoader
 {
-    private static $utilClasses = [
-        'Constants',
+    private static $utilsDir;
+    private static $utilsClassNames = [
+        'Constants', 'Utils'
     ];
 
-    private static $interfaces = [
-        'iModel',
-        'iPage'
+    private static $classes = [
+        'ClassLoader', 'Dispatcher', 'AdminDispatcher',
+
+        'Security', 'Environment',
+
+        'Database', 'BlogPostManagement', 'FormManagement',
+        'LoginManagement', 'Cookie', 'Language', 'Logger',
+        'ReviewManagement'
     ];
 
     private static $abstractClasses = [
-        'aModel',
         'aDispatcher',
         'aPage',
     ];
 
-    private static $models = [
-        'BlogPost',
-    ];
-
-    private static $classes = [
-        'Environment',
-        'Security',
-        'Database',
-        'Dispatcher',
-        'AdminDispatcher',
-        'Language',
-        'Cookie',
+    private static $interfaces = [
+        'iPage',
     ];
 
     private static $pages = [
-        'BadRequest400',
-        'NotFound404',
-        'InternalServerError500',
 
-        'Home',
-        'About',
-        'Blog',
+        // User pages
+        'HomePage',
+        'BlogPostPage',
+        'SubmittedPage',
 
-        'Login',
+        // Admin pages
+        'LoginPage',
+        'AdminPage',
+
+        // Error page
+        'ErrorPage',
     ];
 
-    private static function loadUtils(): void
+    public static function initialize(): void
     {
-        $utilsDir = _DIR_PROJECT_ROOT . "/core/utils/";
+        self::$utilsDir = dirname(dirname(__FILE__)) . '/utils/';
 
-        foreach ( self::$utilClasses as $className )
-        {
-            $classPath = "{$utilsDir}/class.{$className}.php";
-            if ( !file_exists($classPath) )
-            {
-                throw new Exception( "Cannot find class '{$className}'" );
+        foreach (self::$utilsClassNames as $className) {
+            if (!file_exists(self::$utilsDir . 'class.' . $className . '.php')) {
+                throw new Exception("Cannot find class \"$className\".");
             }
-            require_once $classPath;
-        }
-    }
-
-    public static function loadInterfaces()
-    {
-        foreach ( self::$interfaces as $interface )
-        {
-            $interfacePath = Constants::_INTERFACE_PREFIX . $interface . Constants::_PHP_EXT;
-            if ( !file_exists($interfacePath) )
-            {
-                throw new Exception( "Cannot find class '{$interface}'" );
-            }
-            require_once $interfacePath;
-        }
-    }
-
-    public static function loadAbstractClasses()
-    {
-        foreach ( self::$abstractClasses as $abstractClass )
-        {
-            $abstractClassPath = Constants::_ABSTRACT_CLASS_PREFIX . $abstractClass . Constants::_PHP_EXT;
-            if ( !file_exists($abstractClassPath) )
-            {
-                throw new Exception( "Cannot find class '{$abstractClass}'" );
-            }
-            require_once $abstractClassPath;
-        }
-    }
-
-    public static function loadModels()
-    {
-        foreach ( self::$models as $model )
-        {
-            $modelPath = Constants::_MODEL_PREFIX . $model . Constants::_PHP_EXT;
-            if ( !file_exists($modelPath) )
-            {
-                throw new Exception( "Cannot find class '{$model}'" );
-            }
-            require_once $modelPath;
-        }
-    }
-
-    public static function loadClasses()
-    {
-        foreach ( self::$classes as $class )
-        {
-            $classPath = Constants::_CLASS_PREFIX . $class . Constants::_PHP_EXT;
-            if ( !file_exists($classPath) )
-            {
-                throw new Exception( "Cannot find class '{$class}'" );
-            }
-            require_once $classPath;
-        }
-    }
-
-    public static function loadPages()
-    {
-        foreach ( self::$pages as $page )
-        {
-            $pagePath = Constants::_PAGE_PREFIX . $page . Constants::_PHP_EXT;
-            if ( !file_exists($pagePath) )
-            {
-                throw new Exception( "Cannot find class '{$page}'" );
-            }
-            require_once $pagePath;
         }
     }
 
     public static function load(): void
     {
-        self::loadUtils();
+        self::initialize();
 
-        self::loadInterfaces();
+        // Utils
+        foreach (self::$utilsClassNames as $className) {
+            require_once(self::$utilsDir . 'class.' . $className . '.php');
+        }
 
-        self::loadAbstractClasses();
+        // Interfaces
+        foreach (self::$interfaces as $interfaceName) {
+            require_once(Constants::_INTERFACE_PREFIX . $interfaceName . Constants::_PHP_EXTENSION);
+        }
 
-        self::loadModels();
+        // AbstractClasses
+        foreach (self::$abstractClasses as $abstractClassName) {
+            require_once(Constants::_ABSTRACT_CLASS_PREFIX . $abstractClassName . Constants::_PHP_EXTENSION);
+        }
 
-        self::loadClasses();
+        // Classes
+        foreach (self::$classes as $className) {
+            require_once(Constants::_CLASS_PREFIX . $className . Constants::_PHP_EXTENSION);
+        }
 
-        self::loadPages();
+        // Pages
+        foreach (self::$pages as $pageName) {
+            require_once(Constants::_PAGE_PREFIX . $pageName . Constants::_PHP_EXTENSION);
+        }
     }
+
 }

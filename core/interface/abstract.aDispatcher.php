@@ -1,6 +1,6 @@
 <?php
 
-defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
+defined('_HELIX_VALID_ACCESS') or die('Invalid access');
 
 abstract class aDispatcher
 {
@@ -10,7 +10,6 @@ abstract class aDispatcher
 
     public static function listen(): void
     {
-        // TODO: Security
         $requestMethod = strtolower( $_SERVER['REQUEST_METHOD'] );
 
         switch ( $requestMethod )
@@ -26,25 +25,36 @@ abstract class aDispatcher
         }
     }
 
-    public static function home(): void
-    {
-        Home::render();
-    }
-
-    public static function about(): void
-    {
-        About::render();
-    }
-
-    public static function blog(): void
-    {
-        Blog::render();
-    }
-
     public static function defaultRequestHandler(): void
     {
-        BadRequest400::render([
-            'message' => "Method '{$_SERVER['REQUEST_METHOD']}' is not allowed"
+        $methodName = strtolower($_SERVER['REQUEST_METHOD']);
+
+        $protocol = ($_SERVER['HTTPS'] ?? '') === 'on' ?
+            "https" :
+            "http";
+
+        $url = "{$protocol}://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+
+        Logger::log( "Unhandled request: {$methodName} @ {$url}" );
+        Logger::mark( false );
+
+        header('HTTP/1.0 403 Forbidden');
+        die;
+    }
+
+    public static function notFound404(): void
+    {
+        ErrorPage::render([
+            'httpCode' => '404',
+            'errorMsg' => 'Page not found',
+        ]);
+    }
+
+    public static function internalServerError500( string $errMsg = ''): void
+    {
+        ErrorPage::render([
+            'httpCode' => '500',
+            'errorMsg' => $errMsg,
         ]);
     }
 }

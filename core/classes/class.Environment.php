@@ -1,6 +1,6 @@
 <?php
 
-defined( '_HELIX_VALID_ACCESS' ) or die( 'Invalid access' );
+defined('_HELIX_VALID_ACCESS') or die('Invalid access');
 
 class Environment
 {
@@ -42,8 +42,25 @@ class Environment
 
     public static function getEnvironment(): array
     {
-        return $_SERVER['HTTP_HOST'] === 'localhost' ?
-            self::loadEnvironment( Constants::_ENV_LOCALHOST ) :
-            self::loadEnvironment( Constants::_ENV_DEPLOY );
+        $host = $_SERVER['HTTP_HOST'];
+        if (stripos($host, 'localhost') !== false) return self::loadEnvironment( Constants::_ENV_LOCALHOST );
+        if (stripos($host, 'live-server-name') !== false) return self::loadEnvironment( Constants::_ENV_DEPLOY );
+
+        throw new Exception('Invalid environment');
+    }
+
+    public static function isLocalhost(): bool
+    {
+        return (bool)(in_array( Security::getUserIP(), ['127.0.0.1', '::1'] ));
+    }
+
+    public static function getBaseURL(): string
+    {
+        return self::getEnvironment()['base_url'];
+    }
+
+    public static function getTimezone(): string
+    {
+        return self::getEnvironment()['timezone'];
     }
 }
