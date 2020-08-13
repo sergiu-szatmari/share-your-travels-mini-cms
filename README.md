@@ -31,9 +31,9 @@ Blog posts' title and content change according to the selected website language.
 
 ---
 
-#### Join form
+#### Contact form
 
-![](./webfiles/img/readme/contact-preview.png);
+![](./webfiles/img/readme/contact-preview.png)
 
 ---
 
