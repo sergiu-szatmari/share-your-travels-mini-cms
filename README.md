@@ -1,6 +1,6 @@
 # _"Share your travels"_ mini CMS
 
-Mini cms-like app that serves as a blogging platform for travelling story sharing.
+Mini cms-like app that serves as a blogging platform for sharing stories by travelling enthusiasts.
 
 ## Requirements
 
